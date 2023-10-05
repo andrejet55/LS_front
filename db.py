@@ -22,6 +22,7 @@ dato = {"category": category,
 name = ''.join(random.choices(string.ascii_letters, k=10))
 
 # Once the user has submitted, upload it to the database
+
 if user and title and url and submit:
 	doc_ref = db.collection("users").document(user)
 	doc_ref.set({
